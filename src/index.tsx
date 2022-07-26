@@ -1,19 +1,42 @@
-import React from 'react';
-import ReactDOM from 'react-dom/client';
-import './index.css';
-import App from './App';
-import reportWebVitals from './reportWebVitals';
+import React, { createContext } from "react";
+import ReactDOM from "react-dom/client";
+import App from "./App";
+import ExpenseStore from "./mobx/ExpenseStore";
+import IncomeStore from "./mobx/IncomeStore";
+import UserStore from "./mobx/UserStore";
+import WalletStore from "./mobx/WalletStore";
+
+interface State {
+  userstore: UserStore;
+  walletstore: WalletStore;
+  incomestore:IncomeStore;
+  expensestore:ExpenseStore
+}
+
+const userstore = new UserStore();
+const walletstore = new WalletStore();
+const incomestore = new IncomeStore()
+const expensestore= new ExpenseStore()
+
+export const Context = createContext<State>({
+  userstore,
+  walletstore,
+  incomestore,
+  expensestore
+});
 
 const root = ReactDOM.createRoot(
-  document.getElementById('root') as HTMLElement
+  document.getElementById("root") as HTMLElement
 );
 root.render(
-  <React.StrictMode>
+  <Context.Provider
+    value={{
+      userstore,
+      walletstore,
+      incomestore,
+      expensestore
+    }}
+  >
     <App />
-  </React.StrictMode>
+  </Context.Provider>
 );
-
-// If you want to start measuring performance in your app, pass a function
-// to log results (for example: reportWebVitals(console.log))
-// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
-reportWebVitals();

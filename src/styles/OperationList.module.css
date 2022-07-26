@@ -1,0 +1,29 @@
+.container{
+    border-style: solid;
+    border-width: 0px;
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    padding-bottom: 10px;
+}
+.operationBlock{
+
+}
+.text{
+    color:black;
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+.showAllBlock{
+    color:black;
+    display: flex;
+    font-size: 18px;
+    justify-content: center;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    justify-content: center;
+}

@@ -1,0 +1,157 @@
+.container{
+    display: flex;
+    box-shadow: 2px 2px 10px 5px rgb(219, 214, 214);
+    margin-bottom: 20px;
+    border-radius:15px;
+    height:20vh;
+    border-style: solid;
+    border-width: 0px;
+    width:100%;
+    position: relative;
+    justify-content: center;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    
+
+    
+}
+.container:hover{
+    background-color: rgb(231, 231, 231);
+}
+.iconColorDelete{
+ color:rgb(137, 137, 137);
+}
+.iconColorDelete:hover{
+    color:rgb(255, 0, 0);
+}
+.iconColorEdit{
+    color:rgb(137, 137, 137);
+   }
+.iconColorEdit:hover{
+    color:rgb(3, 139, 1);
+}
+.icon{
+    display: flex;
+    border-style: solid;
+    border-width: 0px;
+    width:100%;
+    padding-right: 4px;
+    padding-top:3px;
+    height: fit-content;
+    position:static;
+    top:0;
+    right:0;
+    width: fit-content;
+    position: absolute;
+
+
+    
+ 
+}
+.iconWrapper{
+    display: flex;
+    border-style: solid;
+    border-width: 1px;
+    flex-direction: row;
+    justify-content: flex-end;
+    width: 100%;
+
+}
+.infoWrapper{
+    display: flex;
+    border-style: solid;
+    border-width: 0px;
+    justify-content: center;
+    width: 100%;
+    flex-direction: column;
+
+    
+    
+}
+.walletText{
+    border-style: solid;
+    border-width: 0px;
+    align-self: center;
+    font-size: 22px;
+}
+.balanceText{
+    border-style: solid;
+    border-width: 0px;
+    align-self: center;
+    font-size: 22px;
+}
+.deleteModalButtons{
+    display: flex;
+    justify-content: space-around;
+    margin-top:20px;
+    
+
+}
+.deleteModalDeleteButton{
+    background-color: red;
+    padding:7px 12px;
+    border-radius:10px;
+    color:white;
+    -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari */
+    -khtml-user-select: none; /* Konqueror HTML */
+    -moz-user-select: none; /* Old versions of Firefox */
+    -ms-user-select: none; /* Internet Explorer/Edge */
+    user-select: none; /* Non-prefixed version, currently
+                                  supported by Chrome, Edge, Opera and Firefox */
+}
+
+
+.deleteModalDeleteButton:hover{
+    background-color: rgb(131, 15, 15);
+    
+}
+.deleteModalCancelButton{
+    box-shadow: 1px 1px 5px 0px rgb(219, 219, 219);
+    padding:7px 12px;
+    border-radius:10px;
+
+    -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari */
+    -khtml-user-select: none; /* Konqueror HTML */
+    -moz-user-select: none; /* Old versions of Firefox */
+    -ms-user-select: none; /* Internet Explorer/Edge */
+    user-select: none; /* Non-prefixed version, currently
+                                  supported by Chrome, Edge, Opera and Firefox */
+}
+
+.modalContent{
+    display: flex;
+    border-style: solid;
+    border-width: 0px;
+    flex-direction: column;
+    justify-content: center;
+    width: fit-content;
+    
+
+}
+
+.deleteModalCancelButton:hover{
+    background-color: rgb(228, 228, 228);
+    
+}
+.editModalEditButton{
+    background-color: rgb(3, 139, 1);
+    padding:7px 12px;
+    border-radius:10px;
+    color:white;
+    -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari */
+    -khtml-user-select: none; /* Konqueror HTML */
+    -moz-user-select: none; /* Old versions of Firefox */
+    -ms-user-select: none; /* Internet Explorer/Edge */
+    user-select: none; /* Non-prefixed version, currently
+                                  supported by Chrome, Edge, Opera and Firefox */
+}
+.editModalEditButton:hover{
+    background-color: rgb(72, 151, 90);
+}
